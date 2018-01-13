@@ -1,7 +1,7 @@
 package com.kyiv_kug.expression;
 
 /**
- * @see WhenExpressionKt
+ * @see SwitchCaseKt
  */
 public class SwitchCase {
 

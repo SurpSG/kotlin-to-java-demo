@@ -1,5 +1,8 @@
 package com.kyiv_kug.expression;
 
+/**
+ * @see WhenExpressionKt
+ */
 public class SwitchCase {
 
     int apply(String operation, int a, int b){

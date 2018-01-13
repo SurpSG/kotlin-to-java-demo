@@ -1,4 +1,4 @@
-package com.kyiv_kug;
+package com.kyiv_kug.boxing;
 
 public class Boxing {
 
@@ -19,7 +19,3 @@ public class Boxing {
         System.out.println(a + " Integer");
     }
 }
-
-
-
-

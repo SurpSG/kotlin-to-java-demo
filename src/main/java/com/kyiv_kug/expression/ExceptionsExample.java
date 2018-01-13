@@ -2,6 +2,9 @@ package com.kyiv_kug.expression;
 
 public class ExceptionsExample {
 
+    /**
+     * @see com.kyiv_kug.expression.ExceptionExampleKt
+     */
     public static void main(String[] args) {
         String msg = "";
         try{

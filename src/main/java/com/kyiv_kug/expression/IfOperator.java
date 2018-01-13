@@ -1,5 +1,8 @@
 package com.kyiv_kug.expression;
 
+/**
+ * @see IfOperatorKotlinKt
+ */
 public class IfOperator {
 
     void divideAndPrint(int a, int b, boolean alwaysRoundUp){

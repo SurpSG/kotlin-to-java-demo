@@ -1,4 +1,4 @@
-package com.kyiv_kug.statics;
+package com.kyiv_kug.statics.declaration;
 
 public class StaticsClass {
 
@@ -7,6 +7,9 @@ public class StaticsClass {
 
     public static int staticInt = 2;
     public static Object staticObj = new Object();
+
+    public void method(){
+    }
 
     public static int staticMethod(){
         return 1;

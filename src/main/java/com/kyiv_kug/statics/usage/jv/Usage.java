@@ -5,7 +5,6 @@ import com.kyiv_kug.statics.declaration.StaticsClass;
 import com.kyiv_kug.statics.declaration.StaticsClassKotlin;
 
 public class Usage {
-
     static void staticClass() {
         int CONST = StaticsClass.CONST;
         Object CONST_OBJ = StaticsClass.CONST_OBJ;

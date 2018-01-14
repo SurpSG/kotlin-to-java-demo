@@ -1,9 +1,11 @@
 package com.kyiv_kug.statics.usage.jv;
 
 import com.kyiv_kug.statics.declaration.StaticsClass;
+import com.kyiv_kug.statics.declaration.StaticsClassKotlin;
 
 public class Usage {
-    static void javaCode() {
+
+    static void staticClass() {
         int CONST = StaticsClass.CONST;
         Object CONST_OBJ = StaticsClass.CONST_OBJ;
 
@@ -11,23 +13,21 @@ public class Usage {
         StaticsClass.staticObj = new Object();
 
         StaticsClass.staticMethod();
+        new StaticsClass().method();
     }
 
-    static void convertedToKotlin() {
-        int CONST = StaticsClass.CONST;
-        Object CONST_OBJ = StaticsClass.CONST_OBJ;
+    static void staticClassKotlin() {
+        int CONST = StaticsClassKotlin.CONST;
+        Object CONST_OBJ = StaticsClassKotlin.CONST_OBJ;
 
-        StaticsClass.staticInt = 0;
-        StaticsClass.staticObj = new Object();
+        StaticsClassKotlin.staticInt = 0;
+        StaticsClassKotlin.staticObj = new Object();
 
-        StaticsClass.staticMethod();
+        StaticsClassKotlin.staticMethod();
+        new StaticsClassKotlin().method();
     }
 
-    static void convertedToKotlinWithFixes() {
-
-    }
-
-    static void kotlinCode() {
+    static void staticClassRefactoredKt() {
 
     }
 }

@@ -1,5 +1,7 @@
 package com.kyiv_kug.statics.declaration;
 
+import com.kyiv_kug.statics.usage.kt.UsageKt;
+
 public class StaticsClassKotlin {
 
     public static final int CONST = 1;

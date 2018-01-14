@@ -3,7 +3,7 @@ package com.kyiv_kug.statics.usage.kt
 import com.kyiv_kug.statics.declaration.StaticsClass
 import com.kyiv_kug.statics.declaration.StaticsClassKotlin
 
-fun javaCode() {
+fun staticClass() {
     val CONST = StaticsClass.CONST
     val CONST_OBJ = StaticsClass.CONST_OBJ
 
@@ -11,9 +11,10 @@ fun javaCode() {
     StaticsClass.staticObj = Any()
 
     StaticsClass.staticMethod()
+    StaticsClass().method()
 }
 
-fun convertedToKotlin() {
+fun staticClassKotlin() {
     val CONST = StaticsClassKotlin.CONST
     val CONST_OBJ = StaticsClassKotlin.CONST_OBJ
 
@@ -21,12 +22,9 @@ fun convertedToKotlin() {
     StaticsClassKotlin.staticObj = Any()
 
     StaticsClassKotlin.staticMethod()
+    StaticsClassKotlin().method()
 }
 
-fun convertedToKotlinWithFixes() {
-
-}
-
-fun kotlinCode() {
+fun staticClassRefactoredKt() {
 
 }

@@ -7,10 +7,13 @@ import java.util.stream.Collectors;
 
 public class Streams {
     public static void main(String[] args) {
-        List<Integer> strings = Arrays.asList(1,2,3,4);
-        List<String> strings1 = strings.stream().map(s -> s + " ").collect(Collectors.toList());
+        List<Integer> ints = Arrays.asList(1, 2, 3, 4, 5);
 
-        strings1.forEach(System.out::println);
+        List<String> strings = ints.stream()
+                .filter(it -> it > 0)
+                .map(s -> s + " ")
+                .collect(Collectors.toList());
 
+        strings.forEach(System.out::println);
     }
 }

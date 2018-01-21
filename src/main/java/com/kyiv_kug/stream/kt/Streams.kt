@@ -4,13 +4,11 @@ import java.util.*
 
 
 fun main(args: Array<String>) {
-    val strings = ArrayList<String>()
-    strings.add("A")
-    strings.add("B")
-    strings.add("C")
-    strings.add("D")
-    List(4){it+1}
-    strings.map { it + " " }.forEach { print(it) }
+    val ints = List(5){ it + 1 }
 
-    "1".let{  }.apply {  }
+    val strings: List<String> = ints
+            .filter { it > 0 }
+            .map { "$it " }
+
+    strings.forEach (::print)
 }

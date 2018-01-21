@@ -1,4 +1,4 @@
-package com.kyiv_kug.statics.declaration
+package com.kyiv_kug.statics.declaration.solved
 
 class FixedStaticClass {
 

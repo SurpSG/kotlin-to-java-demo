@@ -1,6 +1,5 @@
 package com.kyiv_kug.statics.usage.jv;
 
-import com.kyiv_kug.statics.declaration.FixedStaticClass;
 import com.kyiv_kug.statics.declaration.StaticsClass;
 import com.kyiv_kug.statics.declaration.StaticsClassKotlin;
 
@@ -25,16 +24,5 @@ public class Usage {
 
         StaticsClassKotlin.staticMethod();
         new StaticsClassKotlin().method();
-    }
-
-    static void staticClassRefactored() {
-        int CONST = FixedStaticClass.CONST;
-        Object CONST_OBJ = FixedStaticClass.CONST_OBJ;
-
-        FixedStaticClass.staticInt = 0;
-        FixedStaticClass.staticObj = new Object();
-
-        FixedStaticClass.staticMethod();
-        new FixedStaticClass().method();
     }
 }

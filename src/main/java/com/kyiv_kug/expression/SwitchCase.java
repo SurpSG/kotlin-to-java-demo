@@ -5,7 +5,7 @@ package com.kyiv_kug.expression;
  */
 public class SwitchCase {
 
-    int apply(String operation, int a, int b){
+    static int apply(String operation, int a, int b){
         switch (operation){
             case "+" : return a+b;
             case "-" : return a-b;
@@ -15,7 +15,7 @@ public class SwitchCase {
         }
     }
 
-    int apply2(String operation, int a, int b){
+    static int apply2(String operation, int a, int b){
         int result;
         switch (operation){
             case "+" :
@@ -34,5 +34,15 @@ public class SwitchCase {
                 throw new UnsupportedOperationException("Unknown operation: "+operation);
         }
         return result;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(apply("+", 1, 2));
+        System.out.println(apply("-", 1, 2));
+        System.out.println(apply("*", 1, 2));
+
+        System.out.println(apply2("+", 1, 2));
+        System.out.println(apply2("-", 1, 2));
+        System.out.println(apply2("*", 1, 2));
     }
 }

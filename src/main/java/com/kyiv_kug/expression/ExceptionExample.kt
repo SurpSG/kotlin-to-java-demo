@@ -7,6 +7,8 @@ fun main(args: Array<String>) {
         "$index element is: ${list[index]}"
     } catch (e: Exception) {
        "${ e.message}"
+    } finally {
+        "no content"
     }.trim()
 
     println(msg)

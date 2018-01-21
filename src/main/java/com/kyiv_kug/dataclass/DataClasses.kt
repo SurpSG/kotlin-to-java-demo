@@ -9,7 +9,7 @@ data class Child(var name: String)
 fun main(args: Array<String>) {
     val child = Child("John")
     val parent = Parent(child, "about 1")
-    val parentCopy = parent.deepCopy()
+    val parentCopy = parent.copy()
 
     child.name = "Bob"
     println(parentCopy) //1

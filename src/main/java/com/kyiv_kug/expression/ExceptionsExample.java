@@ -1,5 +1,8 @@
 package com.kyiv_kug.expression;
 
+import java.util.Arrays;
+import java.util.List;
+
 public class ExceptionsExample {
 
     /**
@@ -7,8 +10,10 @@ public class ExceptionsExample {
      */
     public static void main(String[] args) {
         String msg = "";
+        List<Integer> list = Arrays.asList(1,2,3,4);
+        int index = 0;
         try{
-            msg = "arg successfully parsed: "+Integer.parseInt(args[0]);
+            msg = String.format("%d element is: %d", index, list.get(index));
         }catch (Exception e){
             msg = e.getMessage();
         } finally {

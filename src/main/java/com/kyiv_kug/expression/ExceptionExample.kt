@@ -1,8 +1,10 @@
 package com.kyiv_kug.expression
 
 fun main(args: Array<String>) {
+    val list = listOf(1,2,3,4)
+    val index = 0
     val msg = try {
-        "arg successfully parsed: " + Integer.parseInt(args[0])
+        "$index element is: ${list[0]}"
     } catch (e: Exception) {
         e.message ?: e::class.java.name
     } finally {

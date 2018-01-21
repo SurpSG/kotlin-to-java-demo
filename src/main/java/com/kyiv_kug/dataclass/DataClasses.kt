@@ -1,24 +1,22 @@
 package com.kyiv_kug.dataclass
 
-data class Outer(val inner: Inner, val about: String) {
-    fun deepCopy(inner: Inner = this.inner.copy(), about: String = this.about) = Outer(inner, about)
+data class Parent(val child: Child, val about: String) {
+    fun deepCopy(child: Child = this.child.copy(), about: String = this.about) = Parent(child, about)
 }
 
-data class Inner(var name: String, var age: Int)
+data class Child(var name: String)
 
 fun main(args: Array<String>) {
-    val inner1 = Inner("inner 1", 1)
-    val outer1 = Outer(inner1, "about 1")
-    val outer2 = outer1.copy()
+    val child = Child("John")
+    val parent = Parent(child, "about 1")
+    val parentCopy = parent.deepCopy()
 
-    inner1.age = 2
+    child.name = "Bob"
+    println(parentCopy) //1
 
-    println(outer2)
+    parent.child.name = "Alice"
+    println(parentCopy)  //2
 
-    outer1.inner.age = 3
-
-    println(outer2)
-
-    println(outer1.inner === outer2.inner)
+    println(parent.child === parentCopy.child) //1
 }
 

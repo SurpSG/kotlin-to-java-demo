@@ -14,9 +14,6 @@ fun main(args: Array<String>) {
     child.name = "Bob"
     println(parentCopy) //1
 
-    parent.child.name = "Alice"
-    println(parentCopy)  //2
-
-    println(parent.child === parentCopy.child) //1
+    println(parent.child === parentCopy.child) //2
 }
 

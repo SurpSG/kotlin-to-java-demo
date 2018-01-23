@@ -1,14 +1,12 @@
 package com.kyiv_kug.dataclass
 
-data class Parent(val child: Child, val about: String) {
-    fun deepCopy(child: Child = this.child.copy(), about: String = this.about) = Parent(child, about)
-}
+data class Parent(val child: Child)
 
 data class Child(var name: String)
 
 fun main(args: Array<String>) {
     val child = Child("John")
-    val parent = Parent(child, "about 1")
+    val parent = Parent(child)
     val parentCopy = parent.copy()
 
     child.name = "Bob"

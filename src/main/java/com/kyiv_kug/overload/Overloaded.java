@@ -1,4 +1,4 @@
-package com.kyiv_kug;
+package com.kyiv_kug.overload;
 
 public class Overloaded {
     void doSomething(){

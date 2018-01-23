@@ -1,17 +1,8 @@
-package com.kyiv_kug.modificator.jv;
+package com.kyiv_kug.modificator;
 
-/**
- * @see com.kyiv_kug.modificator.kt.SuperClass
- */
 public class SuperClass {
     protected void protectedMethod(){
         System.out.println("SuperClass#protectedMethod");
-    }
-
-    public static void main(String[] args) {
-        new ChildClass(
-                new SuperClass()
-        ).protectedMethod();
     }
 }
 

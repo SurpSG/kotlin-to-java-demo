@@ -1,4 +1,4 @@
-package com.kyiv_kug.main_fun;
+package com.kyiv_kug.main;
 
 public class MainMethod {
     public static void main(String[] args) {

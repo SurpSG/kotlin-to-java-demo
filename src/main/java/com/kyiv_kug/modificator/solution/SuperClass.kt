@@ -1,4 +1,4 @@
-package com.kyiv_kug.modificator.kt
+package com.kyiv_kug.modificator.solution
 
 open class SuperClass {
     /**

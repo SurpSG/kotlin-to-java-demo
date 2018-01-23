@@ -1,26 +1,18 @@
 package com.kyiv_kug.statics.usage.kt
 
-import com.kyiv_kug.statics.declaration.StaticsClass
+import com.kyiv_kug.statics.declaration.StaticsClassJava
 import com.kyiv_kug.statics.declaration.StaticsClassKotlin
 
 fun staticClass() {
-    val CONST = StaticsClass.CONST
-    val CONST_OBJ = StaticsClass.CONST_OBJ
+    val CONST = StaticsClassJava.CONST
+    val CONST_OBJ = StaticsClassJava.CONST_OBJ
 
-    StaticsClass.staticInt = 0
-    StaticsClass.staticObj = Any()
-
-    StaticsClass.staticMethod()
-    StaticsClass().method()
+    StaticsClassJava.staticMethod()
 }
 
 fun staticClassKotlin() {
     val CONST = StaticsClassKotlin.CONST
     val CONST_OBJ = StaticsClassKotlin.CONST_OBJ
 
-    StaticsClassKotlin.staticInt = 0
-    StaticsClassKotlin.staticObj = Any()
-
     StaticsClassKotlin.staticMethod()
-    StaticsClassKotlin().method()
 }

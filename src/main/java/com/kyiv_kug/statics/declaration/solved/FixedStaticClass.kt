@@ -10,11 +10,6 @@ class FixedStaticClass {
         @JvmField
         val CONST_OBJ = Any()
 
-        @JvmField
-        var staticInt = 2
-        @JvmField
-        var staticObj = Any()
-
         @JvmStatic
         fun staticMethod(): Int = 1
     }
